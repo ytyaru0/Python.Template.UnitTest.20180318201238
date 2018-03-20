@@ -1,7 +1,6 @@
 # Reader.py を参照するため
 import sys, pathlib
-sys.path.append(str(pathlib.Path(pathlib.Path(__file__).parent.parent, 'src')))
-
+sys.path.append(str(pathlib.Path(__file__).resolve().parent.parent / 'src'))
 import unittest
 import unittest.mock
 import logging
